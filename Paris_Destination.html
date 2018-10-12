@@ -4,37 +4,56 @@
 <head>
   <title>Travello</title>
   <meta charset="utf-8">
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/script_comment.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-
+  <link rel="stylesheet" type="text/css" href="styles/style_place.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 
 <body>
-  <header>
-  </header>
+  <section class="b4">
+    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <div class="in1">
+      <div class="content">
+        <h1>Paris Destination</h1>
+      </div>
+    </div>
+  </section>
   <div class="destination item">
     <div class="destination_image">
       <img src="images/destination_4.jpg" alt="">
-      <div class="text">Является столицей и самым густонаселенным городом в Франции , с площадью 105 квадратных километров (41 квадратных миль) и населением 2,206,488. С 200 000 жителей в 1328 году Париж, тогда уже столица Франции, был самым
-        густонаселенным городом
-        Европы. Для сравнения, в Лондоне в 1300 году было 80 000 жителей. С 17-го века Париж был одним из крупнейших центров Европы, торговли, моды, науки, музыки и живописи. В Парижском регионе был ВВПв размере 681 млрд. евро (850 млрд. долл. США)
-        в
-        2016 году, что составляет 31 процент от ВВП Франции. В 2013-2014 годах Парижский регион имел третий по величине ВВП в мире и самый большой региональный ВВП в ЕС . Согласно исследованию Economist Intelligence Unit Worldwide Cost of Living
-        Survey
-        в 2018 году, Париж был вторым по величине дорогим городом в мире, за Сингапуром и опередил Цюрих , Гонконг , Осло и Женеву.
+      <div class="text">It is the capital and most populous city in France, with an area of ​​105 square kilometers (41 square miles) and a population of 2,206,488. With 200,000 inhabitants in 1328, Paris, then the capital of France, was the most
+        populous city in Europe
       </div>
     </div>
-    <div class="review">
-      <form action="" method="post">
-        <input type="text" placeholder="Имя" name="fname" />
-        <input type="email" placeholder="E-mail" name="email" />
-        <textarea placeholder="Сообщение" name="message" rows="10" cols="45"></textarea>
-        <input type="submit" value="Отправить" />
-      </form>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/paris_2.jpg" alt="">
+      <div class="text">For comparison, in London in 1300 there were 80,000 inhabitants. Since the 17th century, Paris has been one of the largest centers of Europe, commerce, fashion, science, music and painting. In the Paris region, there was a
+        GDP of 681 billion euros ($ 850 billion) at 2016, accounting for 31 percent of France's GDP.
+      </div>
+    </div>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/paris_3.jpg" alt="">
+      <div class="text">In 2013-2014, the Paris region had the third largest GDP in the world and the largest regional GDP in the EU. According to a study by the Economist Intelligence Unit Worldwide Cost of Living Survey in 2018, Paris was the
+        second largest expensive city in the world, behind Singapore and ahead of Zurich, Hong Kong, Oslo and Geneva.
+      </div>
     </div>
   </div>
   <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722689938!2d2.277019818843494!3d48.85883773910958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z0J_QsNGA0LjQtiwg0KTRgNCw0L3RhtC40Y8!5e0!3m2!1sru!2sru!4v1537561454407" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722689938!2d2.277019818843494!3d48.85883773910958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z0J_QsNGA0LjQtiwg0KTRgNCw0L3RhtC40Y8!5e0!3m2!1sru!2sru!4v1537561454407" width="1300" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="review">
+    <div id="comments"></div>
+    <form name="form" action="#" method="post" id="form" onsubmit="return false">
+      <textarea id="textarea" name="comment" cols="50" rows="10"></textarea><br />
+      <input type="submit" name="send" value="Add comment" id="done" />
+      </form>
+      <a href="#" onclick="return false" id="add_comment">Add comment</a>
   </div>
 </body>
 
