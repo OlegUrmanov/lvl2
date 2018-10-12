@@ -4,34 +4,59 @@
 <head>
   <title>Travello</title>
   <meta charset="utf-8">
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/script_comment.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-
+  <link rel="stylesheet" type="text/css" href="styles/style_place.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 
 <body>
-  <header>
-  </header>
+  <section class="b6">
+    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <div class="in1">
+      <div class="content">
+        <h1>San Francisco Destination</h1>
+      </div>
+    </div>
+  </section>
   <div class="destination item">
     <div class="destination_image">
       <img src="images/destination_3.jpg" alt="">
-      <div class="text">Город и округ в штате Калифорния, США, названный в честь католического святого (по-испански San) Франциска Ассизского. Население в 2010 году составляло 815 358 человек, это четвёртый по численности населения город Калифорнии
-        и двенадцатый в
-        США. Площадь Сан-Франциско составляет 600,6 км2, из них суши — 121,4 км2, воды — 479,2 км2. Сан-Франциско расположен на северной оконечности полуострова Сан-Франциско. Бо́льшую часть своей истории он являлся самым населённым и важным городом
-        области залива Сан-Франциско.
+      <div class="text">City and county in the state of California, USA, named after the Catholic saint (Spanish in San) Francis of Assisi. The population in 2010 was 815,358 people, this is the fourth most populous city in California and twelfth in
+        USA. The San Francisco area is 600.6 km2, of which land - 121.4 km2, water - 479.2 km2. San Francisco is located on the northern tip of the San Francisco Peninsula. For most of its history, it was the most populated and important city San
+        Francisco Bay Area.
       </div>
     </div>
-    <div class="review">
-      <form action="" method="post">
-        <input type="text" placeholder="Имя" name="fname" />
-        <input type="email" placeholder="E-mail" name="email" />
-        <textarea placeholder="Сообщение" name="message" rows="10" cols="45"></textarea>
-        <input type="submit" value="Отправить" />
-      </form>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/sanfrancisco_2.jpg" alt="">
+      <div class="text">San Francisco, is the cultural, commercial, and financial center of Northern California. San Francisco is the 13th most populous city in the United States, and the 4th most populous in California, with 884,363 residents as of
+        2017. It covers an area of about 46.89 square miles (121.4 km2), mostly at the north end of the San Francisco Peninsula in the San Francisco Bay Area, making it the second most densely populated large US city, and the fifth most densely
+        populated U.S. county, behind only four of the five New York City boroughs.
+      </div>
+    </div>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/sanfrancisco_3.jpg" alt="">
+      <div class="text">As of 2016, it was the 7th highest-income county in the United States, with a per capita personal income of $110,418. The San Francisco CSA was the country's 3rd largest urban economy as of 2017, with a GDP of $878 billion.
+        Of the 574 primary statistical areas in the US, the San Francisco CSA had the highest GDP per capita in 2017, at $99,347 per capita. San Francisco was ranked 14th in the world and third in the United States on the Global Financial Centres
+        Index as of September 2018.
+      </div>
     </div>
   </div>
   <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240103.88263749462!2d-122.57970108790876!3d37.749560778312144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2z0KHQsNC9LdCk0YDQsNC90YbQuNGB0LrQviwg0JrQsNC70LjRhNC-0YDQvdC40Y8sINCh0KjQkA!5e0!3m2!1sru!2sru!4v1537561296645" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240103.88263749462!2d-122.57970108790876!3d37.749560778312144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2z0KHQsNC9LdCk0YDQsNC90YbQuNGB0LrQviwg0JrQsNC70LjRhNC-0YDQvdC40Y8sINCh0KjQkA!5e0!3m2!1sru!2sru!4v1537561296645" width="1300" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="review">
+    <div id="comments"></div>
+    <form name="form" action="#" method="post" id="form" onsubmit="return false">
+      <textarea id="textarea" name="comment" cols="50" rows="10"></textarea><br />
+      <input type="submit" name="send" value="Add comment" id="done" />
+      </form>
+      <a href="#" onclick="return false" id="add_comment">Add comment</a>
   </div>
 </body>
 
