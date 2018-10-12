@@ -4,33 +4,56 @@
 <head>
   <title>Travello</title>
   <meta charset="utf-8">
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/script_comment.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-
+  <link rel="stylesheet" type="text/css" href="styles/style_place.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 
 <body>
-  <header>
-  </header>
+  <section class="b5">
+    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <div class="in1">
+      <div class="content">
+        <h1>Phi Phi Island Destination</h1>
+      </div>
+    </div>
+  </section>
   <div class="destination item">
     <div class="destination_image">
       <img src="images/destination_5.jpg" alt="">
-      <div class="text">Острова близ побережья Таиланда, между материком и островом Пхукет. Часть провинции Краби. Острова Пхипхи состоят из двух основных (Пхи-Пхи-Дон и Пхи-Пхи-Ле) и 4 крошечных островов.Острова сильно пострадали от потрясшего весь
-        Индийский океан
-        цунами в декабре 2004 года, погибло около 2 тыс. человек (в том числе 1200 до сих пор числятся пропавшими без вести). Архипелаг известен тем, что здесь проходили съёмки фильма «Пляж» с Леонардо Ди Каприо в главной роли.
+      <div class="text">Islands off the coast of Thailand, between the mainland and the island of Phuket. Part of Krabi province. Phi Phi Islands are made up of two main islands (Phi Phi Don and Phi Phi Le) and 4 tiny islands. The islands have
+        suffered greatly from the shocked Indian Ocean tsunami in December 2004, killed about 2 thousand people (including 1200 are still missing). The archipelago is known for shooting the movie “The Beach” with Leonardo DiCaprio in the lead role.
       </div>
     </div>
-    <div class="review">
-      <form action="" method="post">
-        <input type="text" placeholder="Имя" name="fname" />
-        <input type="email" placeholder="E-mail" name="email" />
-        <textarea placeholder="Сообщение" name="message" rows="10" cols="45"></textarea>
-        <input type="submit" value="Отправить" />
-      </form>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/phi_2.jpg" alt="">
+      <div class="text">The name of the archipelago comes from the Malay language. In the original, it sounded like ‘Pulau Api-Api’ (Malay. Pulau Api-Api), which literally translates as “Flaming Island” or “Island of Lights”. Most likely, this name
+        goes back to 'Pokok Api-Api' (Malay. Pokok Api-Api), or “Fire Tree”, as the Malays call Avicennia marina, which before, to a catastrophic tsunami, grew on all the islands of the archipelago.
+      </div>
+    </div>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/phi_3.jpg" alt="">
+      <div class="text">Chi Phi Don is the main and only inhabited island of the archipelago. Area - 28 km ². Phi-Phi-Don consists of two limestone monoliths connected by a sandy slant about a kilometer in length and a minimum width of about 150 m.
+        The main settlement is located on the spit and there is a pier on the side of Ton-Say bay that can receive small sea vessels.
+      </div>
     </div>
   </div>
   <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126511.71458679921!2d98.7068748504425!3d7.737618988543567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304e20be764e3d0d%3A0xbf9db8781a549f71!2sPhi+Phi+Islands!5e0!3m2!1sru!2sru!4v1537561705526" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126511.71458679921!2d98.7068748504425!3d7.737618988543567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304e20be764e3d0d%3A0xbf9db8781a549f71!2sPhi+Phi+Islands!5e0!3m2!1sru!2sru!4v1537561705526" width="1300" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="review">
+    <div id="comments"></div>
+    <form name="form" action="#" method="post" id="form" onsubmit="return false">
+      <textarea id="textarea" name="comment" cols="50" rows="10"></textarea><br />
+      <input type="submit" name="send" value="Add comment" id="done" />
+      </form>
+      <a href="#" onclick="return false" id="add_comment">Add comment</a>
   </div>
 </body>
 
