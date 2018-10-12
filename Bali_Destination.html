@@ -4,32 +4,59 @@
 <head>
   <title>Travello</title>
   <meta charset="utf-8">
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/script_comment.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/style_place.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 
 </head>
 
 <body>
-  <header>
-  </header>
+
+  <section class="b1">
+    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <div class="in1">
+      <div class="content">
+        <h1>Bali Destination</h1>
+      </div>
+    </div>
+  </section>
   <div class="destination item">
     <div class="destination_image">
       <img src="images/destination_1.jpg" alt="">
-      <div class="text">Бали — остров в Малайском архипелаге, в группе Малых Зондских островов, в составе одноимённой провинции Индонезии. Омывается с юга Индийским океаном, с севера — морем Бали Тихого океана. С запада отделён одноимённым проливом
-        от острова Ява, с востока — Ломбокским проливом от острова Ломбок.
+      <div class="text">Bali is an island in the Malay Archipelago, in the group of the Small Sunda Islands, within the province of Indonesia of the same name. It is washed from the south by the Indian Ocean, from the north - by the Bali Pacific
+        Ocean. From the west separated by the strait of the same name from the island of Java, from the east - the Lomboksky Strait from the island of Lombok.
       </div>
     </div>
-    <div class="review">
-      <form action="" method="post">
-        <input type="text" placeholder="Имя" name="fname" />
-        <input type="email" placeholder="E-mail" name="email" />
-        <textarea placeholder="Сообщение" name="message" rows="10" cols="45"></textarea>
-        <input type="submit" value="Отправить" />
-      </form>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/bali_2.jpg" alt="">
+      <div class="text">Bali is a popular tourist destination, which has seen a significant rise in tourists since the 1980s. Tourism-related business makes up 80% of its economy. It is renowned for its highly developed arts, including traditional
+        and modern dance, sculpture, painting, leather, metalworking and music. The Indonesian International Film Festival is held every year in Bali. In March 2017, TripAdvisor named Bali as the world's top destination in its Traveller's Choice
+        award.
+      </div>
+    </div>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/bali_3.jpg" alt="">
+      <div class="text">Bali is part of the Coral Triangle, the area with the highest biodiversity of marine species. In this area alone, over 500 reef-building coral species can be found. For comparison, this is about seven times as many as in the
+        entire Caribbean. Most recently, Bali was the host of the 2011 ASEAN Summit, 2013 APEC and Miss World 2013.
+      </div>
     </div>
   </div>
   <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1010608.986696035!2d114.841549640625!3d-8.333434620766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2z0JHQsNC70Lg!5e0!3m2!1sru!2sru!4v1537560476881" width="600" height="450" margin-left: 20px; frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010627.4732317476!2d115.1125155732165!3d-8.322555305663638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2z0JHQsNC70Lg!5e0!3m2!1sru!2sru!4v1539327989688" width="1300" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="review">
+    <div id="comments"></div>
+    <form name="form" action="#" method="post" id="form" onsubmit="return false">
+      <textarea id="textarea" name="comment" cols="50" rows="10"></textarea><br />
+      <input type="submit" name="send" value="Add comment" id="done" />
+    </form>
+      <a href="#" onclick="return false" id="add_comment">Add comment</a>
   </div>
 </body>
 
