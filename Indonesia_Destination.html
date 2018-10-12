@@ -3,38 +3,61 @@
 
 <head>
   <title>Travello</title>
-  <meta charset="utf-8">
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/script_comment.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-
+  <link rel="stylesheet" type="text/css" href="styles/style_place.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 
 <body>
-  <header>
-  </header>
+  <section class="b2">
+    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <div class="in1">
+      <div class="content">
+        <h1>Indonesia Destination</h1>
+      </div>
+    </div>
+  </section>
   <div class="destination item">
     <div class="destination_image">
       <img src="images/destination_2.jpg" alt="">
-      <div class="text">Республика Индонезия (Индонезия: Республика Индонезия является суверенным государством в Юго-Восточной Азии , между Индийским и Тихоокеанским океанами. Это самый большой в мире островная страна , с более тринадцати тысяч
-        островов , и на
-        1,904,569 квадратных километров (735,358 квадратных миль ), 14е место по площади и седьмойвеличине в комбинированных морских и площади. С более чем 261 миллионом человек, это 4-я по величине страна в мире,а также самая густонаселенная страна
-        с
-        мусульманским большинством . Ява, самый густонаселенный остров в мире , содержит более половины населения страны.
+      <div class="text">Republic of Indonesia (Indonesia: The Republic of Indonesia is a sovereign state in Southeast Asia, between the Indian and Pacific oceans. It is the largest island nation in the world, with more than thirteen thousand
+        islands and on
+        1,904,569 square kilometers (735,358 square miles), 14th place in area and seventh magnitude in combined sea and square. With more than 261 million people, it is the 4th largest country in the world, as well as the most populous country
+        with
+        Muslim majority. Java, the most populous island in the world, contains more than half of the country's population.
       </div>
     </div>
-    <div class="review">
-      <form action="" method="post">
-        <input type="text" placeholder="Имя" name="fname" />
-        <input type="email" placeholder="E-mail" name="email" />
-        <textarea placeholder="Сообщение" name="message" rows="10" cols="45"></textarea>
-        <input type="submit" value="Отправить" />
-      </form>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/indonesia_3.jpg" alt="">
+      <div class="text">The Indonesian archipelago has been an important region for trade since at least the 7th century, when Srivijaya and then later Majapahit traded with Chinese dynasties and Indian kingdoms. Local rulers gradually absorbed
+        foreign cultural, religious and political models from the early centuries CE, and Hindu and Buddhist kingdoms flourished. Indonesian history has been influenced by foreign powers drawn to its natural resources. Muslim traders and Sufi
+        scholars brought Islam, while European powers brought Christianity and fought one another to monopolise trade in the Spice Islands of Maluku during the Age of Discovery.
+      </div>
+    </div>
+  </div>
+  <div class="destination item">
+    <div class="destination_image">
+      <img src="images/indonesia_2.jpg" alt="">
+      <div class="text">Indonesia is a republic with an elected parliament and president. It has 34 provinces, of which five have special status. Jakarta, the country's capital, is the second most populous urban area in the world. The country shares
+        land borders with Papua New Guinea, East Timor, and the eastern part of Malaysia. Other neighbouring countries include Singapore, Vietnam, the Philippines, Australia, Palau, and India's Andaman and Nicobar Islands.
+      </div>
     </div>
   </div>
   <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16312961.962797256!2d111.19330690572951!3d-3.433450695614324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2z0JjQvdC00L7QvdC10LfQuNGP!5e0!3m2!1sru!2sru!4v1537561076292" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9767377.081944907!2d118.9256138396739!3d-4.587725313123147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2z0JjQvdC00L7QvdC10LfQuNGP!5e0!3m2!1sru!2sru!4v1539364975073" width="1300" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
-
+  <div class="review">
+    <div id="comments"></div>
+    <form name="form" action="#" method="post" id="form" onsubmit="return false">
+      <textarea id="textarea" name="comment" cols="50" rows="10"></textarea><br />
+      <input type="submit" name="send" value="Add comment" id="done" />
+      </form>
+      <a href="#" onclick="return false" id="add_comment">Add comment</a>
+  </div>
 </body>
 
 </html>
